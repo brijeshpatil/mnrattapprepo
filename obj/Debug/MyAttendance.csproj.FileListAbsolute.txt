@@ -1,0 +1,19 @@
+D:\Brijesh\Dot Net\MyAttendance\MyAttendance\bin\MyAttendance.dll.config
+D:\Brijesh\Dot Net\MyAttendance\MyAttendance\bin\MyAttendance.dll
+D:\Brijesh\Dot Net\MyAttendance\MyAttendance\bin\MyAttendance.pdb
+D:\Brijesh\Dot Net\MyAttendance\MyAttendance\obj\Debug\MyAttendance.csprojResolveAssemblyReference.cache
+D:\Brijesh\Dot Net\MyAttendance\MyAttendance\obj\Debug\MyAttendance.dll
+D:\Brijesh\Dot Net\MyAttendance\MyAttendance\obj\Debug\MyAttendance.pdb
+D:\Brijesh\Dot Net\MyAttendance\MyAttendance\bin\AjaxControlToolkit.dll
+D:\Brijesh\Dot Net\MyAttendance Updated\MyAttendance\MyAttendance\obj\Debug\MyAttendance.csprojResolveAssemblyReference.cache
+D:\Brijesh\Dot Net\MyAttendance Updated\MyAttendance\MyAttendance\obj\Debug\MyAttendance.dll
+D:\Brijesh\Dot Net\MyAttendance Updated\MyAttendance\MyAttendance\obj\Debug\MyAttendance.pdb
+D:\Brijesh\Dot Net\MyAttendance Updated\MyAttendance\MyAttendance\bin\MyAttendance.dll.config
+D:\Brijesh\Dot Net\MyAttendance Updated\MyAttendance\MyAttendance\bin\MyAttendance.dll
+D:\Brijesh\Dot Net\MyAttendance Updated\MyAttendance\MyAttendance\bin\MyAttendance.pdb
+D:\Brijesh\Dot Net\MyAttendanceByBranch\MyAttendance\MyAttendance\bin\MyAttendance.dll.config
+D:\Brijesh\Dot Net\MyAttendanceByBranch\MyAttendance\MyAttendance\bin\MyAttendance.dll
+D:\Brijesh\Dot Net\MyAttendanceByBranch\MyAttendance\MyAttendance\bin\MyAttendance.pdb
+D:\Brijesh\Dot Net\MyAttendanceByBranch\MyAttendance\MyAttendance\obj\Debug\MyAttendance.csprojResolveAssemblyReference.cache
+D:\Brijesh\Dot Net\MyAttendanceByBranch\MyAttendance\MyAttendance\obj\Debug\MyAttendance.dll
+D:\Brijesh\Dot Net\MyAttendanceByBranch\MyAttendance\MyAttendance\obj\Debug\MyAttendance.pdb

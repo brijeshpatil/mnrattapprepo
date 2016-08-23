@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MyAttendanceDB" Class="MyDataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=IPHONE\SQLEXPRESS;Initial Catalog=MyAttendanceDB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MyAttendanceDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AttendanceTbl" Member="AttendanceTbls">
+    <Type Name="AttendanceTbl">
+      <Column Name="ATID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FKBID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FkTechID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FkPID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OutTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AtDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.AddNewAttendance" Method="AddNewAttendance">
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TID" Parameter="tID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PID" Parameter="pID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="IT" Parameter="iT" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OT" Parameter="oT" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.GetAllAttendance" Method="GetAllAttendance">
+    <ElementType Name="GetAllAttendanceResult">
+      <Column Name="ATID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FkTechID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FkPID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OutTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AtDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TechID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TechName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetAttendanceForDay" Method="GetAttendanceForDay">
+    <Parameter Name="SDate" Parameter="sDate" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="GetAttendanceForDayResult">
+      <Column Name="ATID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FkTechID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FkPID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OutTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AtDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Duration" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TechID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TechName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CheckAttendance" Method="CheckAttendance">
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TID" Parameter="tID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PID" Parameter="pID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CheckAttendanceResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CheckAttStatus" Method="CheckAttStatus">
+    <Parameter Name="Fname" Parameter="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Lname" Parameter="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TID" Parameter="tID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="PID" Parameter="pID" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CheckAttStatusResult">
+      <Column Name="ATID" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FkTechID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FkPID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OutTime" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AtDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

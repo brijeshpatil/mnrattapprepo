@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/mnr" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\Brijesh\\Dot\ Net\\MyAttendance\ Updated\\MyAttendance\\MyAttendance\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\Brijesh\\Dot\ Net\\MyAttendance\ Updated\\MyAttendance\\MyAttendance\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="CloudString-Web.config Connection String" description="" value="Server=0e1eccf0-2215-4e6f-9838-a63b0050e73e.sqlserver.sequelizer.com;Database=db0e1eccf022154e6f9838a63b0050e73e;User ID=ekmylgwpkgvrgwip;Password=nBq4PBfxtpijUzfzq62wh8qsMb43eHVqksSSwa5RsfLkfRY8izzsa6Cnm7qNFmsS;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Brijesh\\Dot\ Net\\MyAttendance\ Updated\\MyAttendance\\MyAttendance\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CloudString']/@connectionString" />
+  </parameter>
+  <parameter name="conn-Web.config Connection String" description="" value="Data Source=IPHONE\SQLEXPRESS;Initial Catalog=MyAttendanceDB;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Brijesh\\Dot\ Net\\MyAttendance\ Updated\\MyAttendance\\MyAttendance\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='conn']/@connectionString" />
+  </parameter>
+  <parameter name="MyAttendanceDBConnectionString-Web.config Connection String" description="" value="Data Source=IPHONE\SQLEXPRESS;Initial Catalog=MyAttendanceDB;Integrated Security=True" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\Brijesh\\Dot\ Net\\MyAttendance\ Updated\\MyAttendance\\MyAttendance\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyAttendanceDBConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
